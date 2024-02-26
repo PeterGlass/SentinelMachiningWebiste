@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+.project_section {
+  padding: 90px 0 0 0;
+}
+
 .layout_padding {
   padding: 90px 0;
 }
