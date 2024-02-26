@@ -372,7 +372,7 @@
 
   <!-- why us section -->
 
-  <section  class="why_us_section layout_padding">
+  <section  class="why_us_section why_us_section">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -447,21 +447,21 @@
       <div class="row">
         <div class="col-lg-4 col-md-5 offset-md-1">
           <div class="form_container">
-            <form action="">
+            <form action="https://formsubmit.co/peterglass123@gmail.com" method="POST">
               <div>
-                <input type="text" placeholder="Your Name" />
+                <input type="text" name="name" placeholder="Your Name" required/>
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" placeholder="Phone Number" required/>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="Email" required />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" name="message" class="message-box" placeholder="Message" required/>
               </div>
               <div class="btn_box">
-                <button>
+                <button type="submit">
                   SEND
                 </button>
               </div>
