@@ -241,11 +241,11 @@ a:focus {
 
 .header_section .header_bottom .container-fluid {
   padding-right: 25px;
-  padding-left: 15px;
+  padding-left: 25px;
 }
 
 .navbar-brand img {
-  width: 220px;
+  width: 125px;
 }
 
 .custom_nav-container {
