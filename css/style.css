@@ -977,7 +977,7 @@ a:focus {
   margin-right: 15px;
 }
 
-.contact_section .form_container input {
+.contact_section .form_container input,textarea {
   width: 100%;
   border: none;
   height: 50px;
@@ -1005,8 +1005,10 @@ a:focus {
   color: #252525;
 }
 
-.contact_section .form_container input.message-box {
+.contact_section .form_container textarea.message-box {
   height: 120px;
+  resize: none;
+  padding: 15px;
 }
 
 .contact_section .form_container button {
