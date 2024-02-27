@@ -11,11 +11,11 @@ getYear();
 
 // owl carousel slider js
 var owl = $('.project_carousel').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 15,
     center: true,
     startPosition: 2,
-    autoplay: true,
+    autoplay: false,
     navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
         '<i class="fa fa-angle-right" aria-hidden="true"></i>'
@@ -50,11 +50,12 @@ $('.owl-filter-bar').on('click', '.item', function (e) {
 
     e.preventDefault();
 })
+
 /** google_map js **/
 function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
+        center: new google.maps.LatLng(30.2668008, -97.7444489),
+        zoom: 10,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
