@@ -639,6 +639,7 @@ a:focus {
 .about_section .detail-box p {
   color: #1f1f1f;
   margin-top: 15px;
+  margin-right: 10px
 }
 
 .about_section .detail-box a {
