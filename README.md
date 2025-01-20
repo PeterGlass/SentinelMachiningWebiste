@@ -1,4 +1,4 @@
-# QuartexMachiningWebiste
-The main website for QuartexMachining, a landing site for QuartexMachining.
+# SentinelMachiningWebiste
+The main website for SentinelMachining, a landing site for SentinelMachining.
 
-Deployed here: http://quartexmachining.com/
+Deployed here: http://sentinelmachining.com/
