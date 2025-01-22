@@ -392,7 +392,7 @@ a:focus {
 }
 
 .quote_btn-container a:hover {
-  color: #252525;
+  color: white;
 }
 
 .quote_btn-container .quote_btn {
@@ -407,7 +407,7 @@ a:focus {
 }
 
 .quote_btn-container .quote_btn:hover {
-  background-color: #bc570d;
+  background-color: #142e60;
 }
 
 /*end header section*/
@@ -492,7 +492,7 @@ a:focus {
 }
 
 .slider_section .detail-box .btn-box .btn1:hover {
-  background-color: #bc570d;
+  background-color: #142e60;
 }
 
 .slider_section .detail-box .btn-box .btn2 {
@@ -657,7 +657,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #bc570d;
+  background-color: #142e60;
 }
 
 .project_section .heading_container {
@@ -965,7 +965,7 @@ a:focus {
 }
 
 .why_us_section .btn-box a:hover {
-  background-color: #bc570d;
+  background-color: #142e60;
 }
 
 .contact_section {
@@ -1035,7 +1035,7 @@ a:focus {
 }
 
 .contact_section .form_container button:hover {
-  background-color: #bc570d;
+  background-color: #142e60;
 }
 
 .contact_section .map_container {
@@ -1198,7 +1198,7 @@ a:focus {
 }
 
 .info_section .info_form button:hover {
-  background-color: #bc570d;
+  background-color: #142e60;
 }
 
 .info_section .info_bottom .row {
