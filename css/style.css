@@ -1016,7 +1016,7 @@ a:focus {
 }
 
 .contact_section .form_container textarea.message-box {
-  height: 120px;
+  height: 200px;
   resize: none;
   padding: 15px;
 }
