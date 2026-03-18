@@ -1,574 +1,690 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Site Metas -->
-    <meta name="keywords" content="CNC machining Austin TX, precision machining Austin, custom metal parts Austin, 3D printing Austin, prototype machining Texas, aluminum machining Austin, CNC milling Austin" />
-    <meta name="description" content="Sentinel Machining — CNC milling, 3D printing, and design-to-production services in Austin, TX. Custom aluminum and steel parts with fast turnaround. Get a free quote today." />
-    <meta name="author" content="Sentinel Machining" />
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sentinel Machining | CNC Machining & 3D Printing | Austin, TX</title>
+    <meta name="description" content="Sentinel Machining — Precision CNC milling, 3D printing & prototyping in Austin, TX. Custom aluminum and steel parts with fast turnaround. Talk directly to the machinist. Get a free quote today.">
+    <meta name="keywords" content="CNC machining Austin TX, precision machining Austin, custom metal parts Austin, 3D printing Austin, prototype machining Texas, aluminum machining Austin, CNC milling Austin, machine shop Austin, custom CNC parts Texas">
+    <meta name="author" content="Sentinel Machining">
+    <meta name="robots" content="index, follow">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sentinel Machining | CNC Machining & 3D Printing | Austin, TX">
+    <meta property="og:description" content="Precision CNC milling, 3D printing & prototyping. Custom aluminum and steel parts with fast turnaround. Talk directly to the machinist.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sentinelmachining.com">
+    <meta property="og:image" content="https://sentinelmachining.com/images/about-img.jpg">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
 
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark': '#0f0f1a',
+                        'dark-light': '#1a1a2e',
+                        'dark-card': '#16213e',
+                        'accent': '#e67e22',
+                        'accent-hover': '#d35400',
+                        'steel': '#8a9bb5',
+                        'steel-light': '#b8c6d9',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
 
-    <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!--owl slider stylesheet -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sentinel Machining",
+        "description": "Precision CNC milling, 3D printing & prototyping in Austin, TX",
+        "url": "https://sentinelmachining.com",
+        "telephone": "+15125506955",
+        "email": "contact@sentinelmachining.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Austin",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+        },
+        "areaServed": "Austin, TX",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-18:00"
+    }
+    </script>
 </head>
 
-<body>
+<body class="bg-dark text-white font-sans antialiased">
 
-<div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-        <div class="header_top">
-            <div class="container-fluid header_top_container">
-                <div class="contact_nav">
-                    <a href="tel:+15125506955">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>
-                Call : (512) 550-6955
-              </span>
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="images/logo.png" alt="Sentinel Machining" class="h-10 w-auto brightness-0 invert">
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="nav-link text-sm font-medium text-steel-light hover:text-white transition-colors">About</a>
+                    <a href="#services" class="nav-link text-sm font-medium text-steel-light hover:text-white transition-colors">Services</a>
+                    <a href="#projects" class="nav-link text-sm font-medium text-steel-light hover:text-white transition-colors">Projects</a>
+                    <a href="#why-us" class="nav-link text-sm font-medium text-steel-light hover:text-white transition-colors">Why Us</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-steel-light hover:text-white transition-colors">Contact</a>
+                    <a href="#contact" class="ml-4 px-6 py-2.5 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/25">
+                        Get A Quote
                     </a>
-                    <a href="mailto:contact@sentinelmachining.com">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>
-                Email : contact@sentinelmachining.com
-              </span>
-                    </a>
-                    <a href="https://maps.google.com/?q=Austin,+TX">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>
-                Austin, TX
-              </span>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+                    <span class="w-6 h-0.5 bg-white transition-all duration-300 origin-center"></span>
+                    <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-white transition-all duration-300 origin-center"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-6">
+                <div class="flex flex-col gap-4 pt-4 border-t border-white/10">
+                    <a href="#about" class="mobile-nav-link text-steel-light hover:text-white transition-colors">About</a>
+                    <a href="#services" class="mobile-nav-link text-steel-light hover:text-white transition-colors">Services</a>
+                    <a href="#projects" class="mobile-nav-link text-steel-light hover:text-white transition-colors">Projects</a>
+                    <a href="#why-us" class="mobile-nav-link text-steel-light hover:text-white transition-colors">Why Us</a>
+                    <a href="#contact" class="mobile-nav-link text-steel-light hover:text-white transition-colors">Contact</a>
+                    <a href="#contact" class="mt-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-lg text-center transition-all duration-200">
+                        Get A Quote
                     </a>
                 </div>
             </div>
         </div>
-        <div class="header_bottom">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="Sentinel Machining">
-                    </a>
+    </nav>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""> </span>
-                    </button>
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0">
+            <img src="images/slider-bg.jpg" alt="" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark"></div>
+        </div>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  ">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about"> About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#project">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact Us</a>
-                            </li>
-                        </ul>
-                        <div class="quote_btn-container">
-                            <a href="#contact" class="quote_btn">
-                                Get A Quote
-                            </a>
+        <!-- Subtle grid overlay -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            <div class="max-w-3xl">
+                <div class="animate-fade-in">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
+                        <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                        <span class="text-sm text-steel-light">CNC Machine Shop — Austin, TX</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+                        Precision Parts.<br>
+                        <span class="text-accent">Direct From</span><br>
+                        The Machinist.
+                    </h1>
+
+                    <p class="mt-6 text-lg sm:text-xl text-steel-light max-w-xl leading-relaxed">
+                        CNC milling, 3D printing & rapid prototyping. No sales reps, no runaround — you talk directly to the person making your parts.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mt-10">
+                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/25 group">
+                            Get A Free Quote
+                            <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                        <a href="#services" class="inline-flex items-center justify-center px-8 py-4 border border-white/20 hover:border-white/40 text-white font-semibold rounded-lg transition-all duration-200 hover:bg-white/5">
+                            Our Services
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="flex flex-wrap gap-x-8 gap-y-3 mt-12 pt-8 border-t border-white/10">
+                        <div class="flex items-center gap-2 text-sm text-steel">
+                            <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            3-Axis CNC Milling
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-steel">
+                            <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Multi-Material 3D Printing
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-steel">
+                            <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Fast Turnaround
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col-md-10 mx-auto">
-                                <div class="detail-box">
-                                    <h1>
-                                        CNC MACHINING &<br>
-                                        RAPID PROTOTYPING<br>
-                                        <small style="font-size: 0.5em; font-weight: 400;">Austin, TX &mdash; From Concept to Finished Part</small>
-                                    </h1>
-                                    <div class="btn-box">
-                                        <a href="#contact" class="btn1">
-                                            Get A Free Quote
-                                        </a>
-                                        <a href="#services" class="btn2">
-                                            Our Services
-                                        </a>
-                                    </div>
-                                </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Image -->
+                <div class="relative scroll-animate">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden">
+                        <img src="images/about-img.jpg" alt="Sentinel Machining shop" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Accent corner -->
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-accent/30 rounded-2xl -z-10"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="scroll-animate">
+                    <span class="text-accent font-semibold text-sm tracking-wider uppercase">About Us</span>
+                    <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+                        A Machine Shop That<br>
+                        <span class="text-accent">Actually Talks</span> to You
+                    </h2>
+
+                    <div class="mt-8 space-y-5 text-steel-light leading-relaxed">
+                        <p>
+                            Sentinel Machining is a precision CNC machine shop in Austin, Texas. We specialize in custom aluminum and steel parts — from one-off prototypes to short production runs.
+                        </p>
+                        <p>
+                            What makes us different: <strong class="text-white">you talk directly to the machinist.</strong> No sales reps, no account managers, no game of telephone. Send a drawing, get a quote, ask a question — you'll hear back from the person actually making your parts.
+                        </p>
+                        <p>
+                            We work with you from concept to finished part. Need to validate a design before committing to metal? We'll 3D print it first, iterate until it's right, then machine the final version.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 mt-10">
+                        <div class="p-5 rounded-xl bg-dark-card/50 border border-white/5">
+                            <div class="text-3xl font-bold text-accent">24hr</div>
+                            <div class="text-sm text-steel mt-1">Typical quote turnaround</div>
+                        </div>
+                        <div class="p-5 rounded-xl bg-dark-card/50 border border-white/5">
+                            <div class="text-3xl font-bold text-accent">1</div>
+                            <div class="text-sm text-steel mt-1">Point of contact — always</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 lg:py-32 relative bg-dark-light/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-2xl mx-auto scroll-animate">
+                <span class="text-accent font-semibold text-sm tracking-wider uppercase">What We Do</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold">Our Services</h2>
+                <p class="mt-4 text-steel-light">From napkin sketch to finished part — one shop, one point of contact.</p>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+                <!-- CNC Milling -->
+                <div class="group scroll-animate">
+                    <div class="relative p-8 rounded-2xl bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300 h-full">
+                        <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">CNC Milling</h3>
+                        <p class="text-steel-light leading-relaxed mb-6">
+                            Precision 3-axis CNC machining — from simple brackets to complex multi-setup parts. Tight tolerances, clean finishes, fast turnaround.
+                        </p>
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-semibold uppercase tracking-wider text-steel mb-3">Materials</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">6061 Aluminum</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">7075 Aluminum</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">Mild Steel</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">Tool Steel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Printing -->
+                <div class="group scroll-animate">
+                    <div class="relative p-8 rounded-2xl bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300 h-full">
+                        <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">3D Printing & Prototyping</h3>
+                        <p class="text-steel-light leading-relaxed mb-6">
+                            Rapid prototyping with multi-material 3D printing. Get a functional prototype in days, not weeks. Test fit, form, and function before committing to metal.
+                        </p>
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-semibold uppercase tracking-wider text-steel mb-3">Materials</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">PLA</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">PETG</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">ABS</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">TPU</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">Multi-Color</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design & Engineering -->
+                <div class="group scroll-animate">
+                    <div class="relative p-8 rounded-2xl bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300 h-full">
+                        <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Design & Engineering</h3>
+                        <p class="text-steel-light leading-relaxed mb-6">
+                            Got a napkin sketch? A rough idea? We'll work with you to turn it into a manufacturable part. CAD design, toolpath planning, fixturing — we handle it all.
+                        </p>
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-semibold uppercase tracking-wider text-steel mb-3">Includes</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">CAD Design</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">DFM Review</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">Toolpath Planning</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-white/5 text-steel-light border border-white/10">Fixturing</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
-    <!-- end slider section -->
-</div>
 
-<!-- about section -->
-
-<section id="about" class="about_section">
-    <div class="container  ">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="detail-box">
-                    <div class="heading_container">
-                        <h2>
-                            About Us
-                        </h2>
-                    </div>
-                    <p>
-                        Sentinel Machining is a precision CNC machine shop in Austin, Texas. We specialize in
-                        custom aluminum and steel parts &mdash; from one-off prototypes to short production runs.
-                    </p>
-                    <p>
-                        What makes us different: we don't just cut metal. We work with you from concept to finished part.
-                        Need help with design? We'll collaborate on it. Need to validate a prototype before committing to
-                        a full production run? We'll 3D print it first, then machine the final version in metal.
-                    </p>
-                    <p>
-                        We're built for small businesses, startups, and custom fabricators who need quality parts
-                        without the overhead of a big shop. You talk directly to the machinist &mdash; no sales reps,
-                        no runaround, no six-week lead times.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 ">
-                <div class="img-box">
-                    <img src="images/about-img.jpg" alt="Sentinel Machining shop">
-                </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-2xl mx-auto scroll-animate">
+                <span class="text-accent font-semibold text-sm tracking-wider uppercase">Our Work</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold">Recent Projects</h2>
+                <p class="mt-4 text-steel-light">A selection of parts we've machined and prototyped for our clients.</p>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<!-- end about section -->
-
-<!-- services section -->
-
-<section id="services" class="why_us_section">
-    <div class="container">
-        <div class="heading_container">
-            <h2>
-                Our Services
-            </h2>
-        </div>
-        <div class="why_us_container">
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/w1.png" alt="CNC Milling">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        CNC Milling
-                    </h5>
-                    <p>
-                        Precision 3-axis CNC machining in aluminum and steel. From simple brackets to complex
-                        multi-setup parts. We work with 6061 and 7075 aluminum, mild steel, and tool steel.
-                        Tight tolerances, clean finishes, fast turnaround.
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/w2.png" alt="3D Printing">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        3D Printing & Prototyping
-                    </h5>
-                    <p>
-                        Rapid prototyping with multi-material 3D printing. Get a functional prototype in your hands in
-                        days, not weeks. Test fit, form, and function before committing to metal. Available in PLA, PETG,
-                        ABS, TPU, and more &mdash; with multi-color capability.
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/w3.png" alt="Design Services">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        Design & Engineering
-                    </h5>
-                    <p>
-                        Got a napkin sketch? A rough idea? We'll work with you to turn it into a manufacturable part.
-                        We handle the CAD design, toolpath planning, and fixturing. You just tell us what the part
-                        needs to do. From concept to production &mdash; one shop, one point of contact.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- end services section -->
-
-<!-- project section -->
-
-<section id="project" class="project_section project_section">
-    <div class="container">
-        <div class="heading_container">
-            <h2>
-                Projects
-            </h2>
-        </div>
-        <div class="carousel-wrap ">
-            <div class="filter_box">
-                <h6>
-                    Category filter
-                </h6>
-                <nav class="owl-filter-bar">
-                    <a href="#" class="item active" data-owl-filter="*">All</a>
-                    <a href="#" class="item" data-owl-filter=".mill">CNC Mill</a>
-                    <a href="#" class="item" data-owl-filter=".print3d">3D Print</a>
-                </nav>
+            <!-- Filter Tabs -->
+            <div class="flex justify-center gap-2 mt-12 scroll-animate">
+                <button class="filter-btn active px-5 py-2.5 text-sm font-medium rounded-lg transition-all duration-200" data-filter="all">All</button>
+                <button class="filter-btn px-5 py-2.5 text-sm font-medium rounded-lg transition-all duration-200" data-filter="cnc">CNC Mill</button>
+                <button class="filter-btn px-5 py-2.5 text-sm font-medium rounded-lg transition-all duration-200" data-filter="3dprint">3D Print</button>
             </div>
 
-            <div class="owl-carousel project_carousel">
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/peg.jpeg" alt="Custom Harley-Davidson foot peg  — CNC machined from billet aluminum" />
+            <!-- Project Grid -->
+            <div id="project-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <!-- Featured: Harley Foot Pegs -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/peg.jpeg" alt="Custom Harley-Davidson foot peg — CNC machined from billet aluminum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Custom Harley Foot Pegs
-                            </h5>
-                            <p>
-                                Designed and manufactured custom aftermarket foot pegs for Harley-Davidson motorcycles.
-                                Collaborated with Xlerated Customs from concept through production &mdash; 10 sets delivered.
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                                <span class="px-2.5 py-1 text-xs rounded-full bg-white/5 text-steel-light font-medium">Featured</span>
+                            </div>
+                            <h3 class="text-lg font-bold">Custom Harley Foot Pegs</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                Designed and manufactured custom aftermarket foot pegs for Harley-Davidson motorcycles. Collaborated with Xlerated Customs from concept through production — 10 sets delivered.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/project2.png" alt="CNC milled aluminum part" />
+
+                <!-- Project 2 -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/project2.png" alt="CNC milled aluminum part" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Aluminum CNC Part
-                            </h5>
-                            <p>
-                                Custom aluminum component machined to spec on our 3-axis CNC mill.
-                                Tight tolerances held across all critical dimensions.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                            <h3 class="text-lg font-bold mt-3">Aluminum CNC Part</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                Custom aluminum component machined to spec on our 3-axis CNC mill. Tight tolerances held across all critical dimensions.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item print3d">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/3d.jpeg" alt="3D Printed Part" />
+
+                <!-- 3D Print -->
+                <div class="project-card scroll-animate" data-category="3dprint">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/3d.jpeg" alt="3D Printed prototype part" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                3D Printed Part
-                            </h5>
-                            <p>
-                                Functional prototype 3D. Used for fit and form validation before
-                                machining the final version in aluminum.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-blue-500/10 text-blue-400 font-medium">3D Print</span>
+                            <h3 class="text-lg font-bold mt-3">3D Printed Prototype</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                Functional prototype for fit and form validation before machining the final version in aluminum.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/project4.png" alt="CNC machined prototype" />
+
+                <!-- Project 4 -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/project4.png" alt="CNC machined prototype" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Prototype Part
-                            </h5>
-                            <p>
-                                Functional prototype machined from 6061 aluminum. Client used this to
-                                validate fit and function before committing to a production run.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                            <h3 class="text-lg font-bold mt-3">Prototype Part</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                Functional prototype machined from 6061 aluminum. Client used this to validate fit and function before a full production run.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/project5.png" alt="Custom aluminum bracket" />
+
+                <!-- Project 5 -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/project5.png" alt="Custom aluminum bracket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Custom Bracket
-                            </h5>
-                            <p>
-                                Custom mounting bracket machined from aluminum billet. Designed to
-                                client specifications with precision bolt hole patterns.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                            <h3 class="text-lg font-bold mt-3">Custom Bracket</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                Custom mounting bracket machined from aluminum billet. Precision bolt hole patterns to client specifications.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/project7.png" alt="Precision aluminum machining" />
+
+                <!-- Project 7 -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/project7.png" alt="Precision aluminum machining" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Precision Aluminum Part
-                            </h5>
-                            <p>
-                                High-precision aluminum component with tight tolerance features.
-                                Clean deburring and consistent surface finish throughout.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                            <h3 class="text-lg font-bold mt-3">Precision Aluminum Part</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                High-precision aluminum component with tight tolerance features. Clean deburring and consistent surface finish.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/project8.png" alt="Short run production parts" />
+
+                <!-- Project 8 -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/project8.png" alt="Short run production parts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Short Run Production
-                            </h5>
-                            <p>
-                                Small batch production run of identical parts. Consistent quality across
-                                the entire run with repeatable fixturing.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                            <h3 class="text-lg font-bold mt-3">Short Run Production</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                Small batch production run. Consistent quality across the entire run with repeatable fixturing.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/project9.png" alt="Custom machined part" />
+
+                <!-- Project 9 -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/project9.png" alt="Custom machined part" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Custom Machined Part
-                            </h5>
-                            <p>
-                                One-off custom part machined to client's CAD model. Quick turnaround
-                                from file to finished part.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                            <h3 class="text-lg font-bold mt-3">Custom Machined Part</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                One-off custom part machined to client's CAD model. Quick turnaround from file to finished part.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="item mill">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="images/project11.png" alt="CNC machined metal part" />
+
+                <!-- Project 11 -->
+                <div class="project-card scroll-animate" data-category="cnc">
+                    <div class="group relative rounded-2xl overflow-hidden bg-dark-card border border-white/5 hover:border-accent/30 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="images/project11.png" alt="CNC machined metal part" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <div class="detail-box">
-                            <h5>
-                                Metal Component
-                            </h5>
-                            <p>
-                                Precision machined metal component with multiple operations.
-                                Clean finish ready for assembly.
+                        <div class="p-6">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-accent/10 text-accent font-medium">CNC Mill</span>
+                            <h3 class="text-lg font-bold mt-3">Metal Component</h3>
+                            <p class="text-sm text-steel-light mt-2 leading-relaxed">
+                                Precision machined metal component with multiple operations. Clean finish ready for assembly.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- end project section -->
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-24 lg:py-32 relative bg-dark-light/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-2xl mx-auto scroll-animate">
+                <span class="text-accent font-semibold text-sm tracking-wider uppercase">The Difference</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold">Why Sentinel?</h2>
+            </div>
 
-<!-- why us section -->
-
-<section  class="why_us_section why_us_section">
-    <div class="container">
-        <div class="heading_container">
-            <h2>
-                Why Choose Us?
-            </h2>
-        </div>
-        <div class="why_us_container">
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/w1.png" alt="">
+            <!-- Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+                <div class="scroll-animate">
+                    <div class="relative p-8 rounded-2xl bg-dark border border-white/5 h-full">
+                        <div class="text-5xl font-black text-accent/20 mb-4">01</div>
+                        <h3 class="text-xl font-bold mb-4">Direct Communication</h3>
+                        <p class="text-steel-light leading-relaxed">
+                            You talk to the person making your parts. No sales department, no account managers, no game of telephone. Send a drawing, get a quote, ask a question — you'll hear back from the machinist directly.
+                        </p>
+                    </div>
                 </div>
-                <div class="detail-box">
-                    <h5>
-                        Direct Communication
-                    </h5>
-                    <p>
-                        You talk to the person making your parts. No sales department, no account managers,
-                        no game of telephone. Send a drawing, get a quote, ask a question &mdash; you'll hear
-                        back from the machinist directly. Fast answers, no runaround.
-                    </p>
+
+                <div class="scroll-animate">
+                    <div class="relative p-8 rounded-2xl bg-dark border border-white/5 h-full">
+                        <div class="text-5xl font-black text-accent/20 mb-4">02</div>
+                        <h3 class="text-xl font-bold mb-4">Prototype First, Then Produce</h3>
+                        <p class="text-steel-light leading-relaxed">
+                            Why gamble on an expensive machined part when you can validate the design with a quick 3D print? We prototype in plastic, iterate until it's right, then machine in metal. Saves you time and money.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="scroll-animate">
+                    <div class="relative p-8 rounded-2xl bg-dark border border-white/5 h-full">
+                        <div class="text-5xl font-black text-accent/20 mb-4">03</div>
+                        <h3 class="text-xl font-bold mb-4">Fast Turnaround</h3>
+                        <p class="text-steel-light leading-relaxed">
+                            Small shop, no backlog bureaucracy. We quote fast, start fast, and deliver fast. Prototypes in days, not weeks. Production runs on a timeline that works for you. We give an honest delivery date and hit it.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/w2.png" alt="">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        Prototype First, Then Produce
-                    </h5>
-                    <p>
-                        Why gamble on an expensive machined part when you can validate the design with a quick 3D print?
-                        We prototype in plastic, iterate until it's right, then machine in metal. It saves you time and money
-                        &mdash; and you'll know the final part will be exactly what you need.
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/w3.png" alt="">
-                </div>
-                <div class="detail-box">
-                    <h5>
-                        Fast Turnaround
-                    </h5>
-                    <p>
-                        Small shop, no backlog bureaucracy. We quote fast, start fast, and deliver fast. Prototypes
-                        in days, not weeks. Production runs on a timeline that works for you. We give you an honest
-                        delivery date and hit it.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- end why us section -->
-
-<!-- contact section -->
-<section id="contact" class="contact_section layout_padding-bottom">
-    <div class="container-fluid">
-        <div class="col-lg-4 col-md-5 offset-md-1">
-            <div class="heading_container">
-                <h2>
-                    Get A Quote
-                </h2>
-                <p style="margin-top: 10px; color: #666;">
-                    Send us your drawings, sketches, or just describe what you need. We'll get back to you with a quote &mdash; usually within 24 hours.
-                    Have CAD files? Email them directly to <a href="mailto:contact@sentinelmachining.com">contact@sentinelmachining.com</a>.
-                </p>
+            <!-- Testimonial / Client callout -->
+            <div class="mt-16 scroll-animate">
+                <div class="relative p-8 md:p-12 rounded-2xl bg-gradient-to-r from-accent/10 to-transparent border border-accent/20">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="flex-1">
+                            <svg class="w-10 h-10 text-accent/40 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <p class="text-lg text-white leading-relaxed">
+                                Worked with Peter from initial concept through production on our custom Harley foot pegs. Direct communication made the whole process smooth — no middlemen, no delays. 10 sets delivered exactly to spec.
+                            </p>
+                            <div class="mt-4">
+                                <div class="font-semibold text-white">Lee Woffenden</div>
+                                <div class="text-sm text-steel">Xlerated Customs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-5 offset-md-1">
-                <div class="form_container">
-                    <form action="https://formsubmit.co/1320b99c7e20139ed6f5678e345a9d86" method="POST">
-                        <input type="hidden" name="_subject" value="New Quote Request from Sentinel Machining Website">
-                        <input type="hidden" name="_template" value="box">
-                        <input type="hidden" name="_autoresponse" value="Thanks for reaching out! We received your message and will get back to you within 24 hours with a quote. — Sentinel Machining">
-                        <input type="text" name="name" placeholder="Your Name" required/>
-                        <input type="email" name="email" placeholder="Email" required />
-                        <input type="tel" name="phone" placeholder="Phone (optional)" />
-                        <textarea type="text" name="message" class="message-box" placeholder="Describe your project — material, quantity, tolerances, or just the general idea. We'll figure out the rest together." required></textarea>
-                        <div class="btn_box">
-                            <button type="submit">
-                                REQUEST A QUOTE
+    </section>
+
+    <!-- Contact / Quote Section -->
+    <section id="contact" class="py-24 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Left: Info -->
+                <div class="scroll-animate">
+                    <span class="text-accent font-semibold text-sm tracking-wider uppercase">Get Started</span>
+                    <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+                        Ready to Make<br>
+                        <span class="text-accent">Your Part?</span>
+                    </h2>
+                    <p class="mt-6 text-steel-light leading-relaxed max-w-lg">
+                        Send us your drawings, sketches, or just describe what you need. We'll get back to you with a quote — usually within 24 hours.
+                    </p>
+                    <p class="mt-4 text-steel-light leading-relaxed max-w-lg">
+                        Have CAD files? Email them directly — we accept STEP, IGES, DXF, and most common formats.
+                    </p>
+
+                    <!-- Contact Info -->
+                    <div class="mt-10 space-y-6">
+                        <a href="tel:+15125506955" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-steel">Phone</div>
+                                <div class="text-white font-medium group-hover:text-accent transition-colors">(512) 550-6955</div>
+                            </div>
+                        </a>
+
+                        <a href="mailto:contact@sentinelmachining.com" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-steel">Email</div>
+                                <div class="text-white font-medium group-hover:text-accent transition-colors">contact@sentinelmachining.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://maps.google.com/?q=Austin,+TX" target="_blank" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-steel">Location</div>
+                                <div class="text-white font-medium group-hover:text-accent transition-colors">Austin, TX</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Quote Form -->
+                <div class="scroll-animate">
+                    <div class="p-8 md:p-10 rounded-2xl bg-dark-card border border-white/10">
+                        <h3 class="text-2xl font-bold mb-2">Request a Quote</h3>
+                        <p class="text-steel-light text-sm mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                        <form action="https://formsubmit.co/1320b99c7e20139ed6f5678e345a9d86" method="POST" class="space-y-5">
+                            <input type="hidden" name="_subject" value="New Quote Request from Sentinel Machining Website">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_autoresponse" value="Thanks for reaching out! We received your message and will get back to you within 24 hours with a quote. — Sentinel Machining">
+                            <input type="hidden" name="_captcha" value="true">
+
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-steel-light mb-2">Your Name *</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 rounded-lg bg-dark border border-white/10 text-white placeholder-steel focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors"
+                                    placeholder="John Smith">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-steel-light mb-2">Email *</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg bg-dark border border-white/10 text-white placeholder-steel focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors"
+                                    placeholder="john@company.com">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-steel-light mb-2">Phone <span class="text-steel">(optional)</span></label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-3 rounded-lg bg-dark border border-white/10 text-white placeholder-steel focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors"
+                                    placeholder="(512) 555-0123">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-steel-light mb-2">Project Details *</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="w-full px-4 py-3 rounded-lg bg-dark border border-white/10 text-white placeholder-steel focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors resize-y"
+                                    placeholder="Describe your project — material, quantity, tolerances, or just the general idea. We'll figure out the rest together."></textarea>
+                            </div>
+
+                            <p class="text-xs text-steel">
+                                Have CAD files? Email them to <a href="mailto:contact@sentinelmachining.com" class="text-accent hover:underline">contact@sentinelmachining.com</a> — we accept STEP, IGES, DXF, and more.
+                            </p>
+
+                            <button type="submit"
+                                class="w-full px-8 py-4 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/25 flex items-center justify-center gap-2 group">
+                                Request A Quote
+                                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                             </button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-md-6 px-0">
-                <div class="map_container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55154.899708523924!2d-97.75674591289453!3d30.23190793907888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b415c4aa64f7%3A0x58766a82422ce131!2sAustin%2C%20TX%2078741!5e0!3m2!1sen!2sus!4v1736567021215!5m2!1sen!2sus" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- Map -->
+            <div class="mt-16 rounded-2xl overflow-hidden border border-white/5 scroll-animate">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55154.899708523924!2d-97.75674591289453!3d30.23190793907888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b415c4aa64f7%3A0x58766a82422ce131!2sAustin%2C%20TX%2078741!5e0!3m2!1sen!2sus!4v1736567021215!5m2!1sen!2sus"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="Sentinel Machining" class="h-8 w-auto brightness-0 invert opacity-60">
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-steel">
+                    <a href="tel:+15125506955" class="hover:text-white transition-colors">(512) 550-6955</a>
+                    <span class="text-white/10">|</span>
+                    <a href="mailto:contact@sentinelmachining.com" class="hover:text-white transition-colors">contact@sentinelmachining.com</a>
+                    <span class="text-white/10">|</span>
+                    <span>Austin, TX</span>
+                </div>
+
+                <div class="text-sm text-steel/60">
+                    &copy; <span id="year"></span> Sentinel Machining
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- end contact section -->
+    </footer>
 
-<!-- info section -->
-<section class="info_section ">
-
-    <div class="container">
-        <div class="contact_nav">
-            <a href="tel:+15125506955">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-            Call : (512) 550-6955
-          </span>
-            </a>
-            <a href="mailto:contact@sentinelmachining.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-            Email : contact@sentinelmachining.com
-          </span>
-            </a>
-            <a href="https://maps.google.com/?q=Austin,+TX">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-            Austin, TX
-          </span>
-            </a>
-        </div>
-    </div>
-</section>
-<!-- end info_section -->
-
-
-<!-- footer section -->
-<footer class="footer_section">
-    <div class="container">
-        <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By Sentinel Machining
-        </p>
-    </div>
-</footer>
-<!-- footer section -->
-
-<!-- jQery -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<!-- popper js -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<!-- bootstrap js -->
-<script src="js/bootstrap.js"></script>
-<!-- owl slider -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-</script>
-<!--  OwlCarousel 2 - Filter -->
-<script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
-<!-- custom js -->
-<script src="js/custom.js"></script>
-
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
-
 </html>
